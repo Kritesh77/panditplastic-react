@@ -2,9 +2,14 @@ import React ,{Component} from 'react'
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import Slider from 'react-slick'
-  
+import items from '../items.json'
+// console.log(items)
+const parse = items.map(function (x){
+    console.log(x.name);
+})
 
-class Slider2 extends Component{
+export default class Slider2 extends Component{
+
     render(){
         const settings = {
             autoplay: true,
@@ -12,8 +17,7 @@ class Slider2 extends Component{
             centerMode: true,
             focusOnSelect: true,
             speed: 800,
-            dots: false,
-            arrows: false,
+            dots: true,
             mobileFirst: true,
             adaptiveHeight: true,
             variableWidth: true,
@@ -207,4 +211,3 @@ class Slider2 extends Component{
 };
 
 }
-export default Slider2  

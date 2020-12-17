@@ -321,8 +321,8 @@ header p {
 .fa-arrow-right {
   right: -2%;
 }
-.review-container {
-  margin: 5% 10%;
+.review-container h2 {
+  padding: 5% 5% 2%;
 }
 .review-slider {
   height: 200px;
