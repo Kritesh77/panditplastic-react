@@ -1,16 +1,17 @@
-import React from 'react';
-import '../master.css';
-class Header extends React.Component{
-  render(){
-    return(
+import React from "react";
+import "../master.css";
+class Header extends React.Component {
+  render() {
+    return (
       <header className="header-desktop">
         <div className="header-left">
           <a href="">
             <p>HOME</p>
           </a>
           <a href="">
-            <p>PRODUCTS
-              <i className="fas fa-angle-down" style={{opacity:0.7}}></i>
+            <p>
+              PRODUCTS
+              <i className="fas fa-angle-down" style={{ opacity: 0.7 }}></i>
             </p>
           </a>
         </div>
@@ -25,8 +26,8 @@ class Header extends React.Component{
             <p>CONTACT</p>
           </a>
         </div>
-    </header>
-    )
+      </header>
+    );
   }
 }
 export default Header;
