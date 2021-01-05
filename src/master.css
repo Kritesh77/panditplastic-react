@@ -181,6 +181,7 @@ button {
 
 body {
   color: var(--black);
+  padding-bottom: 150px;
 }
 header {
   background: var(--white);

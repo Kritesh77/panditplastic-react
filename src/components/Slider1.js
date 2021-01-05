@@ -2,6 +2,12 @@ import React, { Component } from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import SliderData1 from "./sliderData/SliderData1.js";
+import sliderData from "../newArrivals.js";
+
+const sliderDataMap = sliderData.map((sliderdata) => (
+  <SliderData1 key={sliderdata.id} sliderdata={sliderdata} />
+));
 
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
@@ -61,134 +67,7 @@ class Slider1 extends Component {
     return (
       <section className="page-pad borderbtm third-wrap new-container auto-section">
         <h1 className="med">New Arrivals</h1>
-        <Slider {...settings}>
-          <div>
-            <div className="new-box flex">
-              <img
-                src="https://images-na.ssl-images-amazon.com/images/I/41%2BxjkVjsFL.jpg"
-                alt=""
-              />
-              <div className="new-item-details">
-                <h4 className="fw-400 new-item">Chocolate Compound</h4>
-                <h4 className="fw-500 new-item-price">
-                  <span className="rs-symbol">&#8377;</span>500
-                </h4>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div className="new-box flex">
-              <img
-                src="https://images-na.ssl-images-amazon.com/images/I/41%2BxjkVjsFL.jpg"
-                alt=""
-              />
-              <div className="new-item-details">
-                <h4 className="fw-400 new-item">Chocolate Compound</h4>
-                <h4 className="fw-500 new-item-price">
-                  <span className="rs-symbol">&#8377;</span>500
-                </h4>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div className="new-box flex">
-              <img
-                src="https://images-na.ssl-images-amazon.com/images/I/41%2BxjkVjsFL.jpg"
-                alt=""
-              />
-              <div className="new-item-details">
-                <h4 className="fw-400 new-item">Chocolate Compound</h4>
-                <h4 className="fw-500 new-item-price">
-                  <span className="rs-symbol">&#8377;</span>500
-                </h4>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div className="new-box flex">
-              <img
-                src="https://images-na.ssl-images-amazon.com/images/I/41%2BxjkVjsFL.jpg"
-                alt=""
-              />
-              <div className="new-item-details">
-                <h4 className="fw-400 new-item">Chocolate Compound</h4>
-                <h4 className="fw-500 new-item-price">
-                  <span className="rs-symbol">&#8377;</span>500
-                </h4>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div className="new-box flex">
-              <img
-                src="https://images-na.ssl-images-amazon.com/images/I/41%2BxjkVjsFL.jpg"
-                alt=""
-              />
-              <div className="new-item-details">
-                <h4 className="fw-400 new-item">Chocolate Compound</h4>
-                <h4 className="fw-500 new-item-price">
-                  <span className="rs-symbol">&#8377;</span>500
-                </h4>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div className="new-box flex">
-              <img
-                src="https://images-na.ssl-images-amazon.com/images/I/41%2BxjkVjsFL.jpg"
-                alt=""
-              />
-              <div className="new-item-details">
-                <h4 className="fw-400 new-item">Chocolate Compound</h4>
-                <h4 className="fw-500 new-item-price">
-                  <span className="rs-symbol">&#8377;</span>500
-                </h4>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div className="new-box flex">
-              <img
-                src="https://images-na.ssl-images-amazon.com/images/I/41%2BxjkVjsFL.jpg"
-                alt=""
-              />
-              <div className="new-item-details">
-                <h4 className="fw-400 new-item">Chocolate Compound</h4>
-                <h4 className="fw-500 new-item-price">
-                  <span className="rs-symbol">&#8377;</span>500
-                </h4>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div className="new-box flex">
-              <img
-                src="https://images-na.ssl-images-amazon.com/images/I/41%2BxjkVjsFL.jpg"
-                alt=""
-              />
-              <div className="new-item-details">
-                <h4 className="fw-400 new-item">Chocolate Compound</h4>
-                <h4 className="fw-500 new-item-price">
-                  <span className="rs-symbol">&#8377;</span>500
-                </h4>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div className="new-box flex">
-              <img
-                src="https://images-na.ssl-images-amazon.com/images/I/41%2BxjkVjsFL.jpg"
-                alt=""
-              />
-              <div className="new-item-details">
-                <h4 className="fw-400 new-item">Chocolate Compound</h4>
-                <h4 className="fw-500 new-item-price">
-                  <span className="rs-symbol">&#8377;</span>500
-                </h4>
-              </div>
-            </div>
-          </div>
-        </Slider>
+        <Slider {...settings}>{sliderDataMap}</Slider>
       </section>
     );
   }
