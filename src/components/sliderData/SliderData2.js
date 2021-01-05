@@ -1,5 +1,3 @@
-import React from "react";
-
 const SliderData2 = ({ reviewData }) => {
   return (
     <div>

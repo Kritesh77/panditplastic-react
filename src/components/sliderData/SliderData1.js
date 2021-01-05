@@ -1,7 +1,7 @@
 import React from "react";
 
 const SliderData1 = ({ sliderdata }) => {
-  console.log(sliderdata);
+  //   console.log(sliderdata);
   return (
     <div>
       <div className="new-box flex">

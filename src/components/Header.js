@@ -5,10 +5,10 @@ class Header extends React.Component {
     return (
       <header className="header-desktop">
         <div className="header-left">
-          <a href="">
+          <a href="./index.html">
             <p>HOME</p>
           </a>
-          <a href="">
+          <a href="./index.html">
             <p>
               PRODUCTS
               <i className="fas fa-angle-down" style={{ opacity: 0.7 }}></i>
@@ -19,10 +19,10 @@ class Header extends React.Component {
           <h4>panditplastic</h4>
         </div>
         <div className="header-right">
-          <a href="">
+          <a href="./index.html">
             <p>ABOUT</p>
           </a>
-          <a href="">
+          <a href="./index.html">
             <p>CONTACT</p>
           </a>
         </div>

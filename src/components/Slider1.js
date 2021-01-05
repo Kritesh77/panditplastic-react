@@ -10,7 +10,7 @@ const sliderDataMap = sliderData.map((sliderdata) => (
 ));
 
 function SampleNextArrow(props) {
-  const { className, style, onClick } = props;
+  const { style, onClick } = props;
   return (
     <div
       id="newslider-right"
@@ -22,7 +22,7 @@ function SampleNextArrow(props) {
 }
 
 function SamplePrevArrow(props) {
-  const { className, style, onClick } = props;
+  const { style, onClick } = props;
   return (
     <div
       id="newslider-left"

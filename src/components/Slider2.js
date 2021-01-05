@@ -2,13 +2,10 @@ import React, { Component } from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-import items from "../items.json";
+
 import SliderData2 from "./sliderData/SliderData2.js";
 import reviews from "../reviews.js";
 // console.log(items)
-const parse = items.map(function (x) {
-  // console.log(x.name);
-});
 const reviewMap = reviews.map((reviewData) => (
   <SliderData2 key={reviewData.id} reviewData={reviewData} />
 ));

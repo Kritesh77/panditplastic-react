@@ -15,22 +15,22 @@ class Mainwrap extends Component {
 
         <section className="flex page-pad borderbtm second-wrap featured-container auto-section">
           <div className="featured-box flex">
-            <a href="#">
+            <a href="./index.html">
               <h1 className="med">Best Selling</h1>
             </a>
           </div>
           <div className="featured-box flex">
-            <a href="#">
+            <a href="./index.html">
               <h1 className="med">Best Selling</h1>
             </a>
           </div>
           <div className="featured-box flex">
-            <a href="#">
+            <a href="./index.html">
               <h1 className="med">Best Selling</h1>
             </a>
           </div>
           <div className="featured-box flex">
-            <a href="#">
+            <a href="./index.html">
               <h1 className="med">Best Selling</h1>
             </a>
           </div>
