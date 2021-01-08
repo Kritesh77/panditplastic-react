@@ -182,6 +182,8 @@ button {
 body {
   color: var(--black);
   padding-bottom: 150px;
+  width: 100vw;
+  overflow-x: hidden;
 }
 header {
   background: var(--white);
