@@ -4,6 +4,8 @@ import Mainwrap from "./components/Mainwrap.js";
 import Slider1 from "./components/Slider1.js";
 import Slider2 from "./components/Slider2.js";
 import Helmet from "react-helmet";
+import "./master.css";
+
 function App() {
   return (
     <div>

@@ -12,14 +12,14 @@ const reviewMap = reviews.map((reviewData) => (
 export default class Slider2 extends Component {
   render() {
     const settings = {
-      autoplay: true,
+      // autoplay: true,
       infinite: true,
       centerMode: true,
       focusOnSelect: true,
       speed: 800,
       dots: true,
       mobileFirst: true,
-      adaptiveHeight: true,
+      // adaptiveHeight: true,
       variableWidth: true,
       responsive: [
         {

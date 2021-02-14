@@ -6,6 +6,12 @@
   border-color: var(--grey);
   transition: all 0.3s ease;
 }
+#root > div {
+  width: 100%;
+}
+.slick-slide {
+  height: auto;
+}
 .page-pad {
   padding-left: 4%;
   padding-right: 4%;
@@ -189,15 +195,16 @@ header {
   background: var(--white);
   position: fixed;
   top: 0;
-  transition: top 0.2s ease-in-out;
   display: flex;
   justify-content: space-between;
   padding: 1% 4%;
-  width: 100vw;
-  flex: 1;
+  width: 100%;
+  /* flex: 1; */
   flex-wrap: wrap;
   align-items: center;
   z-index: 999;
+}
+header div {
 }
 header p {
   display: inline-block;
